@@ -120,3 +120,13 @@ a:hover{
 .it-carousel-wrapper .owl-dots .owl-dot{
     background: $dark_grey_unical;
 }
+
+/**
+ * Back to top
+ */
+.back-to-top {
+    background: $light_grey_unical;
+}
+.back-to-top:hover {
+    background: $dark_grey_unical;
+}
