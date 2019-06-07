@@ -33,7 +33,7 @@ Installazione
 -------------
 
 ```
-pip install django-unical-agid-template
+pip install git+https://github.com/UniversitaDellaCalabria/django-unical-bootstrap-italia.git
 ```
 - In settings.py INSTALLED_APPS inserire *unical_agid_template*.
 
