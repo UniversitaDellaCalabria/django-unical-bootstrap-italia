@@ -80,19 +80,27 @@ Università della Calabria
 {% block header_mobile_arrow %}{% endblock header_mobile_arrow %}
 {% block header_mobile_slim_menu %}{% endblock header_mobile_slim_menu %}
 
+{% block header_center_url %}/{% endblock header_center_url %}
+
 <!-- Logo in Header -->
 {% block header_center_logo %}
-<img class="icon" src="{% static 'images/logo.png' %}" />
+<svg class="icon logo_icon">
+    <image xlink:href="{% static 'images/unical_logo.svg' %}" />
+</svg>
 {% endblock header_center_logo %}
 
 <!-- Organization name in Header -->
 {% block header_center_org_name %}
+{% comment %}
 Università della Calabria
+{% endcomment %}
 {% endblock header_center_org_name %}
 
 <!-- Organization description in Header -->
 {% block header_center_org_subname %}
+{% comment %}
 Il Campus per eccellenza
+{% endcomment %}
 {% endblock header_center_org_subname %}
 
 <!-- Logo in Footer -->

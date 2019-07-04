@@ -66,6 +66,30 @@ $white: #ffffff;
 
 
 /**
+ * Logo
+ */
+.it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a .logo_icon {
+    width: 100%;
+}
+/**
+ * Header Navbar Wrapper
+ */
+
+/* Desktops and laptops ----------- */
+@media (min-width : 992px) {
+    .it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a .logo_icon image{
+        width: 100%;
+    }
+}
+/* Others than desktop ----------- */
+@media (max-width : 991px) {
+    .it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a .logo_icon image{
+        height: 100%;
+    }
+}
+
+
+/**
  * Header Navbar Wrapper
  */
 
