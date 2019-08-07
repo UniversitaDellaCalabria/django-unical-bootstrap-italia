@@ -14,6 +14,16 @@ $white: #ffffff;
 /**
  * Generic elements
  */
+a {
+    cursor: pointer;
+    color: $bordeaux_unical;
+}
+a:hover, a:active {
+    color: $dark_grey_unical;
+}
+a.read-more{
+    color: $light_grey_unical;
+}
 .bg-dark .btn-primary{
     background: $dark_grey_unical;
 }
@@ -26,8 +36,6 @@ $white: #ffffff;
 .bg-dark .btn-secondary:hover{
     background: $dark_grey_unical;
 }
-
-
 
 /**
  * Header Slim Wrapper
@@ -112,12 +120,6 @@ $white: #ffffff;
 /**
  * Main Body
  */
-a.read-more{
-    color: $light_grey_unical;
-}
-a:hover{
-    color: $bordeaux_unical;
-}
 
 /**
  * Footer Main
@@ -153,4 +155,15 @@ a:hover{
 }
 .back-to-top:hover {
     background: $dark_grey_unical;
+}
+
+/**
+ * Form Bootstrap Italia
+ */
+.form-check [type=radio]:checked+label::after {
+    background-color: $bordeaux_unical;
+    border-color: $bordeaux_unical;
+}
+.form-check [type=radio]:checked+label::before {
+    border-color: $bordeaux_unical;
 }
