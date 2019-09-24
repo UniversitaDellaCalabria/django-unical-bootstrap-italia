@@ -2,10 +2,10 @@ Template Django conforme a linee guida AGID per l'Università della Calabria
 ---------------------------------------------------------------------------
 
 Template grafico per il framework Python Django, per applicazioni
-dell'Univeristà della Calabria, basato sulla libreria Bootstrap Italia
-dell'Agenzia per l'Italia Digitale (AGID).
+dell'Univeristà della Calabria, basato sulla libreria
+[Bootstrap Italia](https://italia.github.io/bootstrap-italia/).
 
-L'app estende [django-bootstrap-italia](https://github.com/francesco-filicetti/django-bootstrap-italia).
+L'app estende [design-django-theme](https://github.com/italia/design-django-theme).
 
 ![Home](data/gallery/default.png)
 _**Frontend**: Schermata di default del template_
@@ -200,7 +200,7 @@ Esempio di pagine figlie (qui index.html)
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <svg class="icon">
-                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-arrow-right"></use>
               </svg>
             </a>
           </div>
@@ -216,7 +216,7 @@ Esempio di pagine figlie (qui index.html)
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <svg class="icon">
-                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-arrow-right"></use>
               </svg>
             </a>
           </div>
@@ -232,7 +232,7 @@ Esempio di pagine figlie (qui index.html)
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <svg class="icon">
-                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-arrow-right"></use>
               </svg>
             </a>
           </div>
@@ -248,7 +248,7 @@ Esempio di pagine figlie (qui index.html)
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <svg class="icon">
-                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-arrow-right"></use>
               </svg>
             </a>
           </div>
@@ -264,7 +264,7 @@ Esempio di pagine figlie (qui index.html)
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <svg class="icon">
-                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-arrow-right"></use>
               </svg>
             </a>
           </div>
@@ -280,7 +280,7 @@ Esempio di pagine figlie (qui index.html)
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <svg class="icon">
-                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-arrow-right"></use>
               </svg>
             </a>
           </div>
@@ -296,7 +296,7 @@ Esempio di pagine figlie (qui index.html)
             <a class="read-more" href="#">
               <span class="text">Leggi di più</span>
               <svg class="icon">
-                <use xlink:href="/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
+                <use xlink:href="{% static 'svg/sprite.svg' %}#it-arrow-right"></use>
               </svg>
             </a>
           </div>
@@ -318,7 +318,7 @@ Esempio di pagine figlie (qui index.html)
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
     <h5 id="notification-esempi-title">
         <svg class="icon">
-            <use xlink:href="{% static 'images/svg/sprite.svg' %}#it-info-circle"></use>
+            <use xlink:href="{% static 'svg/sprite.svg' %}#it-info-circle"></use>
         </svg>Esempio di template vuoto
     </h5>
     <p>
@@ -326,7 +326,7 @@ Esempio di pagine figlie (qui index.html)
     </p>
     <button type="button" class="btn notification-close">
         <svg class="icon">
-            <use xlink:href="{% static 'images/svg/sprite.svg' %}#it-close"></use>
+            <use xlink:href="{% static 'svg/sprite.svg' %}#it-close"></use>
         </svg>
         <span class="sr-only">Chiudi notifica: Titolo notification</span>
     </button>
