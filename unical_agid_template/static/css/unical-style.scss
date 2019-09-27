@@ -160,7 +160,8 @@ a.read-more{
 /**
  * Form Bootstrap Italia
  */
-.form-check [type=radio]:checked+label::after {
+.form-check [type=radio]:checked+label::after,
+.form-check [type=checkbox]:checked+label::after {
     background-color: $bordeaux_unical;
     border-color: $bordeaux_unical;
 }
