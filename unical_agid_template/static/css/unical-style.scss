@@ -24,16 +24,16 @@ a:hover, a:active {
 a.read-more{
     color: $light_grey_unical;
 }
-.bg-dark .btn-primary{
+btn-primary{
     background: $dark_grey_unical;
 }
-.bg-dark .btn-secondary:hover{
+.btn-primary:hover{
+    background: $light_grey_unical;
+}
+.btn-secondary{
     background: $bordeaux_unical;
 }
-.bg-dark .btn-secondary{
-    background: $bordeaux_unical;
-}
-.bg-dark .btn-secondary:hover{
+.btn-secondary:hover{
     background: $dark_grey_unical;
 }
 
