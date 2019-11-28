@@ -15,7 +15,6 @@ Requirements
 ------------
 
 ```
-
 django-bootstrap-italia
 libsass
 django-compressor
@@ -56,6 +55,8 @@ singole pagine.
 Stile e CSS/SCSS
 ----------------
 
+Si utilizza [django-sass-processor](https://github.com/jrief/django-sass-processor).
+
 Per la personalizzazione dello stile del template (colori, dimensioni, sfondi)
 si utilizza SASS 3 (Syntactically Awesome Style Sheets), in modo
 da rispettare le caratteristiche responsive ereditate.
@@ -63,9 +64,25 @@ da rispettare le caratteristiche responsive ereditate.
 Il foglio di stile che ridefinisce l'aspetto del tema di default è
 ```static/css/unical-style.scss```.
 
+Se modificato, questo file deve essere compilato per generare il corrispettivo
+```unical-style.css```. Questi i comandi:
+
+```
+python manage.py compilescss
+python manage.py collectstatic
+```
+
+Nel caso in cui non si volessero esporre i file SASS/SCSS in un ambiente
+di produzione utilizzare:
+
+```python manage.py collectstatic --ignore=*.scss```
+
+Per eliminare i file css compilati nelle directory statiche:
+
+```python manage.py compilescss --delete-files```
+
 E' sempre possibile integrare fogli di stile o javascript
 effettuando l'overload del blocco ```{% extra_head %}```.
-
 
 
 Esempio di base-setup.html
@@ -74,9 +91,6 @@ Esempio di base-setup.html
 ```
 <!-- Extends default Bootstrap Italia template -->
 {% extends 'bootstrap-italia-base.html' %}
-
-<!-- From app django-sass-processor -->
-{% load sass_tags %}
 
 {% load static %}
 
@@ -87,7 +101,7 @@ Università della Calabria
 
 <!-- My custom scss sheet -->
 {% block extra_head %}
-<link rel="stylesheet" href="{% sass_src 'css/unical-style.scss' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/unical-style.css' %}" type="text/css" />
 {% endblock extra_head %}
 
 <!-- URL link top left -->
