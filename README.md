@@ -92,6 +92,7 @@ Esempio di base-setup.html
 <!-- Extends default Bootstrap Italia template -->
 {% extends 'bootstrap-italia-base.html' %}
 
+{% load sass_tags %}
 {% load static %}
 
 <!-- Page Title -->
@@ -101,7 +102,7 @@ Università della Calabria
 
 <!-- My custom scss sheet -->
 {% block extra_head %}
-<link rel="stylesheet" href="{% static 'css/unical-style.css' %}" type="text/css" />
+<link rel="stylesheet" href="{% sass_src 'css/unical-style.scss' %}" type="text/css" />
 {% endblock extra_head %}
 
 <!-- URL link top left -->
