@@ -160,6 +160,9 @@ btn-primary{
 /**
  * Form Bootstrap Italia
  */
+ .toggles label input[type="checkbox"]:checked + .lever::after {
+    background-color: $bordeaux_unical;
+}
 .form-check [type=radio]:checked+label::after,
 .form-check [type=checkbox]:checked+label::after {
     background-color: $bordeaux_unical;
@@ -168,3 +171,12 @@ btn-primary{
 .form-check [type=radio]:checked+label::before {
     border-color: $bordeaux_unical;
 }
+
+/**
+ * Section muted
+ */
+.section.section-muted {
+    background-color: #f7f7f7;
+}
+
+
