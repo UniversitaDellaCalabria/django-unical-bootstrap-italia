@@ -36,6 +36,12 @@ btn-primary{
 .btn-secondary:hover{
     background: $dark_grey_unical;
 }
+.text-primary {
+    color: $dark_grey_unical !important;
+}
+.text-secondary {
+    color: $bordeaux_unical !important;
+}
 
 /**
  * Header Slim Wrapper
