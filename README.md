@@ -32,9 +32,9 @@ Installazione
 -------------
 
 ```
-pip install git+https://github.com/UniversitaDellaCalabria/django-unical-bootstrap-italia.git
+pip install django-unical-boostrap-italia
 ```
-- In settings.py INSTALLED_APPS inserire *unical_agid_template*.
+- In settings.py INSTALLED_APPS inserire *django_unical_bootstrap_italia*.
 
 
 Utilizzo

@@ -3,5 +3,5 @@
 *__pycache__
 */.~lock*
 /dist/
-/django_unical_agid_template.egg-info/
+*.egg-info/
 MANIFEST.in

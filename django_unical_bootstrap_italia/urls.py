@@ -7,7 +7,7 @@ from django.urls import path
 
 from .views import *
 
-app_name="unical_agid_template"
+app_name="django_unical_bootstrap_italia"
 
 urlpatterns = [
     path('', index, name='index'),
