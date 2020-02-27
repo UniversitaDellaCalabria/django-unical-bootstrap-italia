@@ -24,13 +24,19 @@ a:hover, a:active {
 a.read-more{
     color: $light_grey_unical;
 }
-.btn-primary{
+.badge-primary {
+    background: $bordeaux_unical;
+}
+.badge-secondary {
+    background: $dark_grey_unical;
+}
+.btn-primary {
     background: $dark_grey_unical;
 }
 .btn-primary:hover {
     background: $light_grey_unical;
 }
-.btn-secondary{
+.btn-secondary {
     background: $bordeaux_unical;
 }
 .btn-secondary:hover {
