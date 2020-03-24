@@ -36,11 +36,26 @@ a.read-more{
 .btn-primary:hover {
     background: $light_grey_unical;
 }
+.btn-outline-primary {
+    color: $dark_grey_unical;
+    -webkit-box-shadow: inset 0 0 0 1px $dark_grey_unical;
+    box-shadow: inset 0 0 0 1px $dark_grey_unical;
+}
+.btn-outline-primary:hover {
+    color: $light_grey_unical;
+    -webkit-box-shadow: inset 0 0 0 1px $light_grey_unical;
+    box-shadow: inset 0 0 0 1px $light_grey_unical;
+}
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+    color: $dark_grey_unical !important;
+    box-shadow: inset 0 1px 0 $light_grey_unical, 0 1px 1px $light_grey_unical, 0 0 0 0.2rem rgba(101, 101, 102, 0.5) !important;
+}
 .btn-secondary {
     background: $bordeaux_unical;
 }
 .btn-secondary:hover {
-    background: $dark_grey_unical
+    background: $dark_grey_unical;
 }
 .btn:not(.btn-outline-primary):not(.btn-outline-secondary):active,
 .btn:not(.btn-outline-primary):not(.btn-outline-secondary):focus {
