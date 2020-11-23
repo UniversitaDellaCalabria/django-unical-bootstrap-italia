@@ -64,12 +64,17 @@ da rispettare le caratteristiche responsive ereditate.
 Il foglio di stile che ridefinisce l'aspetto del tema di default è
 ```static/css/unical-style.scss```.
 
-Se modificato, questo file deve essere compilato per generare il corrispettivo
-```unical-style.css```. Questi i comandi:
+Per la compilazione offline del file .scss in .css,  generando l corrispettivo
+```unical-style.css```, questi i comandi:
 
 ```
 python manage.py compilescss
 python manage.py collectstatic
+``` 
+
+Se si vuole creare il file .css compilato nella directory SASS_PROCESSOR_ROOT (se non specificata STATIC_ROOT):
+```
+python manage.py collectstatic  --use-processor-root
 ```
 
 Nel caso in cui non si volessero esporre i file SASS/SCSS in un ambiente
