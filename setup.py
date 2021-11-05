@@ -9,10 +9,10 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-unical-bootstrap-italia',
-    version='1.0.3',
+    version='1.0.4',
     packages=find_packages(),
     include_package_data=True,
-    license='BSD License',
+    license='Apache 2.0',
     description="Django theme for Università della Calabria (UNICAL) based on Bootstrap Italia theme",
     long_description=README,
     long_description_content_type='text/markdown',
