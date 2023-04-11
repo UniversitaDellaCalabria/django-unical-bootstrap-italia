@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-unical-bootstrap-italia',
-    version='2.0.0',
+    version='1.2.0',
     packages=find_packages(),
     include_package_data=True,
     license='Apache 2.0',
@@ -32,6 +32,6 @@ setup(
         'Programming Language :: Python :: 3',
     ],
     install_requires=[
-        'design-django-theme',
+        'design-django-theme==1.6.4post4',
     ]
 )
