@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-unical-bootstrap-italia',
-    version='1.0.5',
+    version='2.0.0',
     packages=find_packages(),
     include_package_data=True,
     license='Apache 2.0',
@@ -24,13 +24,14 @@ setup(
         'Framework :: Django',
         'Framework :: Django :: 2.0',
         'Framework :: Django :: 3.0',
+        'Framework :: Django :: 4.0',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
     ],
     install_requires=[
-        'design-django-theme>=1.3.9.post3',
+        'design-django-theme',
     ]
 )

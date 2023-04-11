@@ -1,7 +1,6 @@
 <!-- Extends default Bootstrap Italia template -->
 {% extends 'bootstrap-italia-base.html' %}
 
-{% load sass_tags %}
 {% load static %}
 
 <!-- Page Title -->
@@ -12,7 +11,7 @@ Università della Calabria
 <!-- My custom scss sheet -->
 {% block extra_head %}
 <link rel="shortcut icon" href="{% static 'images/favicon/favicon-32x32.png' %}">
-<link rel="stylesheet" href="{% sass_src 'css/unical-style.scss' %}" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/unical-style.css' %}" type="text/css" />
 {% endblock extra_head %}
 
 <!-- URL link top left -->
@@ -194,7 +193,7 @@ Il Campus per eccellenza
         <div class="col-lg-4 col-md-4 pb-2">
             <div class="pb-2">
                 <h4><a href="#" title="Vai alla pagina: Seguici su">Seguici su</a></h4>
-                <ul class="list-inline text-left social">
+                <ul class="list-inline social">
                     <li class="list-inline-item">
                         <a class="p-2 text-white"
                            href="https://it-it.facebook.com/pages/Universit%C3%A0-della-Calabria/166678814380"
