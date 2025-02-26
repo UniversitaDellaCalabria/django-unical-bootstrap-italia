@@ -28,11 +28,11 @@ a:hover, a:active {
 a.read-more{
     color: var(--light_grey_unical);
 }
-.badge-primary {
-    background: var(--bordeaux_unical);
+.bg-primary {
+    background: var(--bordeaux_unical) !important;
 }
-.badge-secondary {
-    background: var(--dark_grey_unical);
+.bg-secondary {
+    background: var(--dark_grey_unical) !important;
 }
 .btn-primary {
     background: var(--dark_grey_unical);

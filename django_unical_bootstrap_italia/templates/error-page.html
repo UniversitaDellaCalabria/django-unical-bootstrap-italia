@@ -20,22 +20,24 @@
 
 {% block centered_container %}
 <div class="callout danger mt-5">
-	<div class="callout-title">
-        <svg class="icon icon-primary icon-danger">
-            <use xlink:href="{% static 'svg/sprites.svg' %}#it-close-circle"></use>
-        </svg>
-        {% block error_type %}
-            {% trans "Error" %}
-        {% endblock error_type %}</div>
-	<p>
-        {% block error_description %}
-            {% trans "Error description" %}
-        {% endblock error_description %}
-        <hr>
-        <a role="button" class="btn btn-outline-secondary"
-           href="/">
-            {% trans "Home" %}
-        </a>
-    </p>
+    <div class="callout-inner">
+        <div class="callout-title">
+            <svg class="icon icon-primary icon-danger">
+                <use xlink:href="{% static 'svg/sprites.svg' %}#it-close-circle"></use>
+            </svg>
+            {% block error_type %}
+                {% trans "Error" %}
+            {% endblock error_type %}
+        </div>
+        <p>
+            {% block error_description %}
+                {% trans "Error description" %}
+            {% endblock error_description %}
+            <hr>
+            <a role="button" class="btn btn-outline-secondary" href="/">
+                {% trans "Home" %}
+            </a>
+        </p>
+    </div>
 </div>
 {% endblock centered_container %}
