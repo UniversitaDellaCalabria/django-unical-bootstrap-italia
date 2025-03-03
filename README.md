@@ -2,7 +2,7 @@ Template Django conforme a linee guida AGID per l'Università della Calabria
 ---------------------------------------------------------------------------
 
 Template grafico per il framework Python Django, per applicazioni
-dell'Univeristà della Calabria, basato sulla libreria
+dell'Università della Calabria, basato sulla libreria
 [Bootstrap Italia](https://italia.github.io/bootstrap-italia/).
 
 L'app estende [design-django-theme](https://github.com/italia/design-django-theme).
