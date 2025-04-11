@@ -66,6 +66,12 @@ a.read-more{
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(101, 101, 102, 0.5) !important;
     background-color:#475664 !important;
 }
+.upload[type=file]+label {
+    background: var(--bordeaux_unical);
+}
+.upload[type=file]+label:hover {
+    background: var(--dark_grey_unical);
+}
 .text-primary {
     color: var(--dark_grey_unical) !important;
 }
