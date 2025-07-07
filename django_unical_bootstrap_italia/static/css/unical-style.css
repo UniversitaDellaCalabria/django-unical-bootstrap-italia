@@ -82,9 +82,10 @@ a.read-more{
 /**
  * Header Slim Wrapper
  */
-.it-header-slim-wrapper{
-    background: var(--bordeaux_unical);
- }
+.it-header-slim-wrapper {
+    background: var(--dark_grey_unical);
+    border-bottom: 1px solid #fff;
+}
 .it-header-slim-wrapper .it-header-slim-wrapper-content .header-slim-right-zone button{
     background: var(--dark_grey_unical);
 }
@@ -101,17 +102,17 @@ a.read-more{
         height: 130px;
     }
 }
-.it-header-center-wrapper{
-    background: var(--white);
+.it-header-center-wrapper {
+    background: var(--bordeaux_unical);
 }
 
 .it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a,
 .it-header-center-wrapper .it-header-center-content-wrapper .it-right-zone{
-    color: var(--dark_grey_unical);
+    color: #fff;
 }
 .it-header-center-wrapper .it-header-center-content-wrapper .it-right-zone .it-socials ul .icon,
 .it-header-center-wrapper .it-header-center-content-wrapper .it-search-wrapper a.rounded-icon svg{
-    fill: var(--dark_grey_unical);
+    fill: #fff;
 }
 
 
@@ -144,10 +145,19 @@ a.read-more{
  */
 
 /* Desktops and laptops ----------- */
-@media (min-width : 992px) {
-    .it-header-navbar-wrapper {
-        background: var(--dark_grey_unical);
+@media (min-width: 992px) {
+    .it-header-wrapper .it-nav-wrapper .it-header-navbar-wrapper {
+        margin-top: 0;
+        border-bottom: 2px solid var(--dark_grey_unical);
     }
+}
+@media (min-width: 992px) {
+    .it-header-navbar-wrapper {
+        background: var(--white);
+    }
+}
+.navbar .navbar-collapsable .navbar-nav li a.nav-link {
+    color: #000 !important;
 }
 /* Others than desktop ----------- */
 @media (max-width : 991px) {
@@ -155,7 +165,7 @@ a.read-more{
         background: none;
     }
     .custom-navbar-toggler svg{
-        fill: var(--dark_grey_unical);
+        fill: #fff;
     }
 }
 

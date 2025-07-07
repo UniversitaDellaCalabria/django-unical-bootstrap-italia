@@ -1,6 +1,7 @@
 <!-- Extends default Bootstrap Italia template -->
 {% extends 'bootstrap-italia-base.html' %}
 
+{% load i18n %}
 {% load static %}
 
 <!-- Page Title -->
@@ -89,9 +90,19 @@ Università della Calabria
 {% block header_center_url %}/{% endblock header_center_url %}
 
 <!-- Logo in Header -->
+{% block header_brand_wrapper %}
+<div class="d-lg-inline col-12 col-md-7 col-lg-6">
+    {{ block.super }}
+</div>
+{% endblock header_brand_wrapper %}
+
+<!-- Logo in Header -->
 {% block header_center_logo %}
-<div class="col-10 col-md-9 col-lg-12 offset-1 offset-md-0">
-    <image src="{% static 'images/unical_logo.svg' %}" style="width: 100%;"/>
+<div class="d-lg-flex col-11 col-md-10 col-lg-12 px-0">
+    <image src="{% static 'images/logo_unical_white.svg' %}"
+           class="w-100"
+           alt="{% trans 'University of Calabria' %}"
+           style="aspect-ratio: 11,15"/>
 </div>
 {% endblock header_center_logo %}
 
